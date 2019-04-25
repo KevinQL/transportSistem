@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar{
+    width: 200px;
+    height: 100%;
+    background: rgba(0,0,0, .9);
+    position: fixed;  /* VER * */
+    left: 0px;
+    transition: all 1000ms;
+}
+
+#sidebar.active{
+    left: -200px;
+}
+
+#sidebar #toggle-btn{
+    color:black;
+    font-size: 2em;
+    position: absolute;  /* ver * */
+    left: 230px;
+    cursor: pointer;
+}
+
+#sidebar ul li{
+    list-style: none;
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid rgba(200,200,200,.3);
+    padding: 15px 10px;
+}
+
+#sidebar ul li .logo{
+    margin: 0 auto;
+    display: block;
+    width: 100px;
+    border-radius: 50%;
+}
